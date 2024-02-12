@@ -13,6 +13,8 @@ Santet Dos is Dos tools for Attack of one Service, but this tools for Auto Dos o
 
 sudo apt install nmap zenity metasploit-framework exploit-db
 
+# Weapon :
+
 - Dos HTTP : HTTP vulnerability Service
 - Dos Win : RDP vulnerability Service
 
